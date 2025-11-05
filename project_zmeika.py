@@ -154,7 +154,12 @@ class Snake(GameObject):
 
 
 def handle_keys(snake: Snake) -> None:
-    """Обрабатывает нажатия клавиш для изменения направления змейки."""
+    """
+    Обрабатывает нажатия клавиш для изменения направления змейки.
+    
+    Args:
+        snake: объект змейки, для которого обрабатываются клавиши
+    """
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
