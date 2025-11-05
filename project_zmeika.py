@@ -130,7 +130,6 @@ class Snake(GameObject):
         """Возвращает позицию головы змейки."""
         return self.positions[0]
 
-
     def reset(self) -> None:
         """Сбрасывает змейку в начальное состояние."""
         self.positions = [(
